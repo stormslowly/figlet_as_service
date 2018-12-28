@@ -17,6 +17,14 @@ app.get('/', (req, res) => {
   res.json({figlet: figlet.textSync(text, font)})
 })
 
+app.get('/preview', (req, res) => {
+  const font = req.query.font || 'Standard'
+  const text = req.query.text || 'bye bye!'
+
+  res.send(`<pre>${figlet.textSync(text, font)}</pre>`)
+})
+
+
 app.get('/fonts', (req, res) => {
 
   res.json({fonts: files})
