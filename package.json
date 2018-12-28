@@ -23,7 +23,9 @@
     "typescript": "^3.0.1"
   },
   "dependencies": {
+    "@types/cors": "^2.8.4",
     "@types/node": "^10.9.1",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "figlet": "^1.2.1"
   }
