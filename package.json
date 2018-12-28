@@ -7,7 +7,7 @@
     "test": "mocha  --opts src/test/mocha.opts --recursive -R list src/test/**/*.{ts,js}",
     "build": "tsc",
     "now-build": "npm run build",
-    "now-start": "node dist/server.js",
+    "now-start": "node dist/start.js",
     "dev": "nodemon --ext js,ts -i dist --exec ts-node src/start.ts"
   },
   "devDependencies": {
